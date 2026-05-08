@@ -49,10 +49,24 @@ const familyData = {
     ]
   },
 
-  family: {
-    title: 'FAMILY ♡',
+  unclefamily: {
+    title: 'UNCLE ✦',
     images: [
-      'family1.jpg'
+      'uncle1.jpg'
+    ]
+  },
+
+  auntiefamily: {
+    title: 'AUNTIE ♡',
+    images: [
+      'auntie1.jpg'
+    ]
+  },
+
+  cousin: {
+    title: 'COUSIN 🎀',
+    images: [
+      'cousin1.jpg'
     ]
   }
 
@@ -71,8 +85,11 @@ function showPage(){
   /* confetti */
 
   confetti({
+
     particleCount: 140,
+
     spread: 90,
+
     startVelocity: 35,
 
     colors: [
@@ -81,12 +98,15 @@ function showPage(){
       '#ffffff',
       '#d9b99b'
     ]
+
   });
 
   /* slow confetti */
 
   const duration = 4000;
-  const end = Date.now() + duration;
+
+  const end =
+  Date.now() + duration;
 
   (function frame(){
 
@@ -132,7 +152,8 @@ function showPage(){
 
   }());
 
-  const data = familyData[selected];
+  const data =
+  familyData[selected];
 
   document
   .getElementById('homePage')
@@ -163,8 +184,11 @@ function showPage(){
   });
 
   window.scrollTo({
+
     top:0,
+
     behavior:'smooth'
+
   });
 
 }
@@ -180,8 +204,11 @@ function goBack(){
   .classList.remove('hidden');
 
   window.scrollTo({
+
     top:0,
+
     behavior:'smooth'
+
   });
 
 }
