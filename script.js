@@ -33,42 +33,26 @@ const familyData = {
     ]
   },
 
-  aunt: {
-    title: 'AUNT 🎀',
-    images: [
-      'aunt1.jpg',
-      'aunt2.jpg',
-      'aunt3.jpg'
-    ]
-  },
-
   uncle: {
-    title: 'UNCLE ✦',
-    images: [
-      'uncle1.jpg'
-    ]
-  },
+  title: 'UNCLE ✦',
+  images: [
+    'uncle1.jpg'
+  ]
+},
 
-  unclefamily: {
-    title: 'UNCLE ✦',
-    images: [
-      'uncle1.jpg'
-    ]
-  },
-
-  auntiefamily: {
-    title: 'AUNTIE ♡',
-    images: [
-      'auntie1.jpg'
-    ]
-  },
+  auntie: {
+  title: 'AUNTIE ♡',
+  images: [
+    'auntie1.jpg'
+  ]
+},
 
   cousin: {
-    title: 'COUSIN 🎀',
-    images: [
-      'cousin1.jpg'
-    ]
-  }
+  title: 'COUSIN 🎀',
+  images: [
+    'cousin1.jpg'
+  ]
+}
 
 };
 
