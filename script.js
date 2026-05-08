@@ -33,26 +33,42 @@ const familyData = {
     ]
   },
 
+  aunt: {
+    title: 'AUNT 🎀',
+    images: [
+      'aunt1.jpg',
+      'aunt2.jpg',
+      'aunt3.jpg'
+    ]
+  },
+
   uncle: {
-  title: 'UNCLE ✦',
-  images: [
-    'uncle1.jpg'
-  ]
-},
+    title: 'UNCLE ✦',
+    images: [
+      'uncle1.jpg'
+    ]
+  },
+
+  unclefamily: {
+    title: 'UNCLE ♡',
+    images: [
+      'unclefamily1.jpg'
+    ]
+  },
 
   auntie: {
-  title: 'AUNTIE ♡',
-  images: [
-    'auntie1.jpg'
-  ]
-},
+    title: 'AUNTIE ♡',
+    images: [
+      'auntie1.jpg'
+    ]
+  },
 
   cousin: {
-  title: 'COUSIN 🎀',
-  images: [
-    'cousin1.jpg'
-  ]
-}
+    title: 'COUSIN 🎀',
+    images: [
+      'cousin1.jpg'
+    ]
+  }
 
 };
 
@@ -63,6 +79,14 @@ function showPage(){
 
   if(selected === ''){
     alert('선택해주세요!');
+    return;
+  }
+
+  const data =
+  familyData[selected];
+
+  if(!data){
+    alert('데이터를 찾을 수 없습니다!');
     return;
   }
 
@@ -136,9 +160,6 @@ function showPage(){
 
   }());
 
-  const data =
-  familyData[selected];
-
   document
   .getElementById('homePage')
   .classList.add('hidden');
@@ -162,6 +183,8 @@ function showPage(){
     document.createElement('img');
 
     img.src = imageName;
+
+    img.loading = 'lazy';
 
     photoGrid.appendChild(img);
 
