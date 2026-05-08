@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Parents Day</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Pretendard:wght@300;400;500;600&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- HOME -->
+
+  <section class="home-page" id="homePage">
+
+    <!-- LEFT -->
+
+    <div class="left-side">
+
+      <p class="small-text">
+        ✿ 2026 PARENTS DAY ✿
+      </p>
+
+      <h1 class="main-title">
+        Parents<br>
+        Day
+      </h1>
+
+      <p class="hand-text">
+        thank you always ♡
+      </p>
+
+      <p class="description">
+        수민이와의 관계를 선택해주세요
+      </p>
+
+      <div class="dropdown-box">
+
+        <select id="familySelect">
+
+          <option value="">
+            선택해주세요
+          </option>
+
+          <option value="mom">
+            엄마
+          </option>
+
+          <option value="dad">
+            아빠
+          </option>
+
+          <option value="grandma">
+            할머니
+          </option>
+
+          <option value="grandpa">
+            할아버지
+          </option>
+
+          <option value="aunt">
+            이모
+          </option>
+
+          <option value="uncle">
+            이모부
+          </option>
+
+          <option value="family">
+            외삼촌
+          </option>
+
+          <option value="family">
+            외숙모
+          </option>
+
+          <option value="family">
+            사촌동생
+          </option>
+
+        </select>
+
+      </div>
+
+      <button onclick="showPage()">
+        OPEN MEMORY
+      </button>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="right-side">
+
+      <div class="paper"></div>
+
+      <img src="home1.jpg" class="main-photo">
+
+      <img src="home2.jpg" class="small-photo">
+
+      <div class="carnation">
+        🌷
+      </div>
+
+      <div class="sparkle s1"></div>
+      <div class="sparkle s2"></div>
+      <div class="sparkle s3"></div>
+
+    </div>
+
+  </section>
+
+  <!-- RESULT -->
+
+  <section class="result-page hidden" id="resultPage">
+
+    <h2 id="title"></h2>
+
+    <p class="result-sub">
+      Happy Parents Day
+    </p>
+
+    <div class="photo-grid" id="photoGrid"></div>
+
+    <p class="bottom-text">
+      HAPPY PARENTS DAY !!
+    </p>
+
+    <button class="back-btn" onclick="goBack()">
+      BACK
+    </button>
+
+  </section>
+
+  <!-- js -->
+  <script src="script.js"></script>
+
+</body>
+</html>
